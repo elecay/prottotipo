@@ -6,7 +6,9 @@ title: Creando tests con unittest, discover y xml reporting
 Creando tests con unittest, discover y xml reporting
 ===
 
-Supongamos que tenemos los siguientes tests:
+{{ page.date | date: "%-d %B %Y"}}
+
+Supongamos que tenemos una calculadora muy elemental que solamente suma y multiplica:
 
 <code>calculator.py</code>
 
@@ -23,6 +25,8 @@ class Calculator:
     def multiplication(a, b):
         return a * b
 {% endhighlight %}
+
+y los siguientes tests:
 
 <code>test_addition.py</code>
 

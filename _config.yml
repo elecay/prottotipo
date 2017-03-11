@@ -1,1 +1,25 @@
-theme: jekyll-theme-slate
+title: Prottotipo
+description: Blog sobre software
+
+url: https://github.com/elecay
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+
+social:
+   github: elecay
+   twitter: elecay
+   email: elecay@gmail.com
+
+google_analytics: "UA-93471884-1"
