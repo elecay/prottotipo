@@ -2,7 +2,8 @@
    <div class="container">
       
       {% if site.comments | page.title != "Prottotipo" %}
-         <div id="disqus_thread"></div>
+         {% page.url != "http://prottotipo.com/" %}
+            <div id="disqus_thread"></div>
             <script>
                /**
                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -20,6 +21,7 @@
                })();
                </script>
                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+         {% endif %}
       {% endif %}
       
       <p class="copy">&copy; {{ site.time | date: '%Y' }} <a href="http://prottotipo.com">Sebastián Rajo</a>  | Theme by: <a href="http://brianmaierjr.com">Brian Maier Jr.</a> Powered by <a href="http://jekyllrb.com">Jekyll</a></p>
