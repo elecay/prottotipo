@@ -1,7 +1,7 @@
 <div class="footer">
    <div class="container">
       
-      {% if site.comments %}
+      {% if site.comments | page.title != "Prottotipo" %}
          <div id="disqus_thread"></div>
             <script>
                /**
