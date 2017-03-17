@@ -2,7 +2,7 @@
    <div class="container">
       
       {% if site.comments | page.title != "Prottotipo" %}
-         {% "page.url" != "http://prottotipo.com/" %}
+         {% if page.url != "http://prottotipo.com/" %}
             <div id="disqus_thread"></div>
             <script>
                /**
