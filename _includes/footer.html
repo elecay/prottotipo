@@ -1,8 +1,8 @@
 <div class="footer">
    <div class="container">
       
-      {% if site.comments | page.title != "Prottotipo" %}
-         {% if page.url != "http://prottotipo.com/" %}
+      {% if site.comments %}
+         {% if page.id | size > 0 %}
             <div id="disqus_thread"></div>
             <script>
                /**
